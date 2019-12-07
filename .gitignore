@@ -6,7 +6,8 @@
 *.pdf
 *.psd
 *.sublime*
-node_modules
+node_modules/
+node_modules_global/
 npm-debug.*
 source/css/*.css
 source/css/*.map
