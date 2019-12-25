@@ -1,0 +1,33 @@
+.photos {
+
+}
+.photos__item {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  .photos__img {
+
+  }
+  .photos__title {
+    color: black;
+    font-weight: 700;
+
+  }
+  .photos__author {
+    color:#333333;
+    font-weight: 400;
+  }
+}
+.photos__like {
+  img {
+
+  }
+  b {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

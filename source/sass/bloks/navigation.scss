@@ -1,0 +1,35 @@
+
+.nav {
+  position: relative;
+  text-align: center;
+}
+.nav__logo {
+  img {
+
+  }
+}
+.nav__list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  .nav__item  {
+    list-style-type: none;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+    box-shadow: white;
+    a {
+      font-size: 18px;
+      line-height: 40px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+  }
+}

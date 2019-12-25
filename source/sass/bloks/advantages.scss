@@ -1,0 +1,48 @@
+.advantages {
+}
+.advantages__item {
+  &--short {
+    background-color: #eeeeee;
+    .advantages__header {
+
+      .advantages__title {
+        color: black;
+        font-weight: 700;
+      }
+      .advantages__number {
+        color:#333333;
+        font-weight: 400;
+      }
+      .advantages__description {
+       color:#333333;
+       font-weight: 400;
+      }
+    }
+
+  }
+}
+.advantages__header {
+  color: white;
+  .advantages__title {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+  }
+  .advantages__number {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+  }
+  .advantages__description {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+  }
+}
