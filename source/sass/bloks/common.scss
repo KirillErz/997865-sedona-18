@@ -1,15 +1,14 @@
 .common {
-  line-height: 26px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  .common__title {
-      font-size: 18px;
-      color: black;
-  }
-  .common__text {
-    font-size: 14px;
-    font-weight: 700;
-    color: #333333;
-  }
+  padding: 40px 22px 5px;
+  min-width: 320px;
+  text-align: center;
+
 }
+.common__title {
+  @include text-title(black);
+  margin-bottom: 25px;
+}
+.common__text {
+@include common-text($common-text-color);
+}
+

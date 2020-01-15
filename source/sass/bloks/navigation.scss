@@ -2,34 +2,31 @@
 .nav {
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.nav__logo {
-  img {
-
-  }
+.nav__toggle {
+  position: absolute;
 }
 .nav__list{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  background-color:$background-navigation-blue;
   padding: 0;
   margin: 0;
-  .nav__item  {
-    list-style-type: none;
-    border-top: 1px solid #9ac2db;
-    border-bottom: 1px solid #678fa8;
-    box-shadow: white;
-    a {
-      font-size: 18px;
-      line-height: 40px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: white;
-      text-transform: uppercase;
-      text-decoration: none;
-      text-align: center;
-      padding-top: 21px;
-      padding-bottom: 21px;
-    }
-  }
+
+}
+.nav__item  {
+  padding: 4px 0px;
+  list-style-type: none;
+  @extend %navigation-border;
+}
+.nav__title {
+  font-size: 18px;
+  line-height: 44px;
+  font-weight: $font-bold;
+  color: $color-navigation-title-white;
+  text-transform: uppercase;
+  text-decoration: none;
 }

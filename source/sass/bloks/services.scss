@@ -1,30 +1,24 @@
 .services {
-
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .services__centre {
   .services__title {
-      color: black;
-      font-size: 21px;
-      line-height: 26px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+    @include text-title($text-black);
+    margin-bottom: 30px;
+
   }
   .services__description {
-      color: #333333;
-      font-size: 14px;
-      line-height: 24px;
-      font-weight: 400;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+    @include description-text($services-text);
+      margin-bottom: 20px;
   }
   .services__finde {
-      background-color: #81b3d2;
-      color: white;
-      font-size: 21px;
-      line-height: 26px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+      background-color:$color-button-services;
+      @include button-text($text-white);
+      display: block;
+      padding: 20px 45px;
   }
 }
