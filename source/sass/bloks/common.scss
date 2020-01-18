@@ -3,10 +3,12 @@
   min-width: 320px;
   text-align: center;
 }
+
 .common__title {
   @include text-title(black);
   margin-bottom: 25px;
 }
+
 .common__text {
-@include common-text($common-text-color);
+  @include common-text($common-text-color);
 }

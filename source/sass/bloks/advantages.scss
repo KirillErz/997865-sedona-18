@@ -1,10 +1,11 @@
 .advantages__item:first-child {
   padding-top: 35px;
-  background-image: url('../img/bg-triangle.svg');
+  background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: 783px 37px;
 }
+
 .advantages {
   display: flex;
   justify-content: center;
@@ -12,6 +13,7 @@
   flex-wrap: wrap;
   background-color: $background-advantages-blue;
 }
+
 .advantages__item {
   width: auto;
   display: flex;
@@ -22,45 +24,56 @@
     text-align: center;
   }
 }
+
 .advantages__item--short:last-child {
-  border-bottom: 0px solid $color-item-short-border;
+  border-bottom: none;
 }
+
 .advantages__item--short {
   border-bottom: 1px solid $color-item-short-border;
   background-color: $advantages-background-gray;
+
   .advantages__header {
     text-align: center;
     padding-bottom: 25px;
     padding-top: 25px;
+
     .advantages__title {
       @include text-title($text-black);
     }
+
     .advantages__number {
       @include description-text($advantages-short-text);
     }
+
     .advantages__description {
       @include description-text($advantages-short-text);
     }
   }
 }
+
 .advantages__header {
   padding: 40px 10px;
+
   .advantages__title {
     @include text-title($text-white);
     margin-bottom: 15px;
   }
+
   .advantages__number {
     @include description-text($text-white);
     margin-bottom: 15px;
-
   }
+
   .advantages__description {
     @include description-text($text-white);
   }
 }
+
 .advantages__photo {
   display: block;
 }
+
 .advantages__img {
   flex-shrink: 0;
   width: 320px;

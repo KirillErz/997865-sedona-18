@@ -9,15 +9,17 @@
 .services__title {
   @include text-title($text-black);
   margin-bottom: 30px;
-
 }
+
 .services__description {
   @include description-text($services-text);
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
 .services__finde {
-    background-color:$color-button-services;
-    @include button-text($text-white);
-    display: block;
-    padding: 20px 45px;
+  background-color: $color-button-services;
+
+  @include button-text($text-white);
+  display: block;
+  padding: 20px 45px;
 }
