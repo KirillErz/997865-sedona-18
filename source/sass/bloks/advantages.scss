@@ -7,16 +7,10 @@
 }
 .advantages {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: $background-advantages-blue;
-}
-.advantages::before {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  text-align: center;
 }
 .advantages__item {
   width: auto;

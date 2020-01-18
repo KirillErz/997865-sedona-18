@@ -2,8 +2,8 @@ $background-navigation-blue:#81b3d2;
 $background-advantages-blue:#81b3d2;
 $color-button-services:#81b3d2;
 $color-button-social:#81b3d2;
-$color-logo-social:white;
-$color-navigation-title-white:white;
+$color-logo-social:#ffffff;
+$color-navigation-title-white:#ffffff;
 $color-item-short-border:#d6d6d6;
 $common-text-color: #333333;
 $background-blue:#99cccc;
@@ -13,61 +13,10 @@ $services-text:#333333;
 $advantages-short-text:#333333;
 $color-photos-text:#333333;
 $text-black:#000000;
-$text-white:white;
+$text-white:#ffffff;
 $color-photos-like: #b2b2b2;
 $font-bold: 700;
 $font-regular: 400;
 
-%navigation-border {
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
-  box-shadow: white;
-}
-@mixin text-title($color) {
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: $font-bold;
-  color:$color;
-};
-@mixin photos-title($color) {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: $font-bold;
-  color:$color;
-};
-@mixin photos-text($color) {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: $font-regular;
-  color:$color;
-};
-@mixin common-text($color) {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: $font-regular;
-  text-transform: uppercase;
-  color:$color;
-};
-@mixin description-text($color) {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: $font-regular;
-  text-transform: uppercase;
-  color:$color;
-};
-@mixin button-text($color) {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: $font-bold;
-  text-transform: uppercase;
-  color:$color;
-};
-@mixin footer-tag-text($color) {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: $font-bold;
-  text-transform: uppercase;
-  color:$color;
-};
+
+

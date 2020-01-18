@@ -1,6 +1,7 @@
 .photos {
   min-width: 320px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
 }
@@ -24,6 +25,7 @@
 }
 .photos__like {
   display: flex;
+  justify-content: left;
 }
 .photos__like-svg {
   fill:$color-photos-like;

@@ -1,0 +1,52 @@
+@mixin navigation-border {
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+@mixin text-title($color) {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: $font-bold;
+  color:$color;
+};
+@mixin photos-title($color) {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: $font-bold;
+  color:$color;
+};
+@mixin photos-text($color) {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: $font-regular;
+  color:$color;
+};
+@mixin common-text($color) {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: $font-regular;
+  text-transform: uppercase;
+  color:$color;
+};
+@mixin description-text($color) {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: $font-regular;
+  text-transform: uppercase;
+  color:$color;
+};
+@mixin button-text($color) {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  color:$color;
+};
+@mixin footer-tag-text($color) {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  color:$color;
+};

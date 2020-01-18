@@ -30,6 +30,7 @@
   text-transform: uppercase;
 }
 .recommendations__item {
+  justify-content: center;
   display: flex;
 }
 .recommendations__item:nth-child(1) {
