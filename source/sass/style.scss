@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff"), url("../fonts/ptsans.woff2") format("woff", "woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 800;
+  src: url("../fonts/ptsansbold.woff"), url("../fonts/ptsansbold.woff2") format("woff", "woff2");
+}
+
+@import "variables.scss";
+@import "mixin.scss";
+@import "bloks/advantages.scss";
+@import "bloks/common.scss";
+@import "bloks/footer.scss";
+@import "bloks/header.scss";
+@import "bloks/intro.scss";
+@import "bloks/main.scss";
+@import "bloks/map.scss";
+@import "bloks/navigation.scss";
+@import "bloks/photos.scss";
+@import "bloks/recommendations.scss";
+@import "bloks/services.scss";
+@import "bloks/social.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
