@@ -1,10 +1,41 @@
+.social__list {
+  padding: 0;
+  display: flex;
+  margin: 30px 55px;
+  justify-content: center;
+  list-style-type: none;
+}
+
 .social__item {
   width: 47px;
   padding: 13px 0;
   margin-right: 3px;
-  background-color: $color-button-social;
+  background-color: $button-social;
+}
+
+.social__item:hover {
+  background-color: $button-social-hover;
+}
+
+.social__item:active {
+  background-color : $button-social-down;
+  opacity: 0.8;
 }
 
 .social__item-logo {
-  fill: $color-logo-social;
+  color : $logo-social;
+}
+
+@media (min-width: 678px) {
+
+  .social__item {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .social__item {
+    margin-right: 6px;
+  }
 }

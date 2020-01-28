@@ -1,0 +1,16 @@
+@media (min-width: 1280px){
+  .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+}
+@media (min-width: 768px){
+  .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+}
+.inner {
+  width: auto;
+  margin: 0 auto;
+}

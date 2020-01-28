@@ -1,5 +1,4 @@
 .services {
-  text-align: center;
   padding-top: 30px;
   padding-bottom: 50px;
   padding-right: 20px;
@@ -17,9 +16,69 @@
 }
 
 .services__finde {
+
+  &--disabled {
+    display: block;
+    padding: 20px 45px;
+    opacity: 0.75;
+    @include button-text($text-white);
+    background-color: $color-button-services-disabled;
+  }
   background-color: $color-button-services;
 
   @include button-text($text-white);
   display: block;
   padding: 20px 45px;
+}
+
+.services__finde:hover {
+  background-color: $color-button-services-hover;
+}
+
+.services__finde:active {
+  opacity: 0.75;
+  background-color: $color-button-services-down;
+}
+
+
+@media (min-width: 768px) {
+
+  .services {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 320px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .services__centre {
+    max-width: 458px;
+    margin: 0 auto;
+  }
+
+  .services__title {
+    @include text-title-desktop($text-black);
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .services {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 330px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .services__centre {
+    max-width: 458px;
+    margin: 0 auto;
+  }
+
+  .services__title {
+    @include text-title-desktop($text-black);
+  }
 }

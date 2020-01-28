@@ -12,6 +12,8 @@
 
 @import "variables.scss";
 @import "mixin.scss";
+@import "bloks/wrapper.scss";
+@import "bloks/inner.scss";
 @import "bloks/advantages.scss";
 @import "bloks/common.scss";
 @import "bloks/footer.scss";
@@ -40,3 +42,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
