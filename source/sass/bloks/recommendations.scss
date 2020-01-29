@@ -7,7 +7,43 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  background-color: white;
+}
+
+@media (min-width: 1280px) {
+  .recommendations {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .recommendations__item {
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    min-width: 332px;
+  }
+
+  .recommendations__wrapper {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .recommendations {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+
+  .recommendations__item {
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    min-width: 256px;
+  }
+
+  .recommendations__wrapper {
+    text-align: center;
+  }
 }
 
 .recommendations__wrapper {
@@ -32,15 +68,11 @@
 }
 
 .recommendations__item {
-  justify-content: center;
+  padding: 0 20px;
   display: flex;
 }
 
 .recommendations__item:nth-child(1) {
-
-  padding: 0 20px;
-  padding-top: 20px;
-
   .recommendations__wrapper {
     padding-top: 10px;
     padding-left: 11px;
@@ -54,8 +86,6 @@
 }
 
 .recommendations__item:nth-child(2) {
-  padding: 0 20px;
-
   .recommendations__wrapper {
     padding-top: 10px;
     padding-left: 11px;
@@ -69,8 +99,6 @@
 }
 
 .recommendations__item:nth-child(3) {
-  padding: 0 20px;
-
   .recommendations__wrapper {
     padding-top: 10px;
     padding-left: 11px;
@@ -83,26 +111,54 @@
   }
 }
 
-.recommendations__item:nth-child(1)::before {
-
-  content: url("../img/icon-house.svg");
+.recommendations__icon-home {
+  color: $recommendations__icon-color;
   height: 37px;
-  width: 39px;
-  display: block;
+  width: 37px;
 }
 
-.recommendations__item:nth-child(2)::before {
-
-  content: url("../img/icon-gift.svg");
+.recommendations__icon-food {
+  color: $recommendations__icon-color;
   height: 37px;
-  width: 39px;
-  display: block;
+  width: 37px;
 }
 
-.recommendations__item:nth-child(3)::before {
-
-  content: url("../img/icon-burger.svg");
+.recommendations__icon-gifts {
+  color: $recommendations__icon-color;
   height: 37px;
-  width: 39px;
-  display: block;
+  width: 37px;
+}
+
+@media (min-width: 1280px) {
+  .recommendations__icon-home {
+    height: 75px;
+    width: 78px;
+  }
+
+  .recommendations__icon-food {
+    height: 75px;
+    width: 78px;
+  }
+
+  .recommendations__icon-gifts {
+    height: 75px;
+    width: 78px;
+  }
+}
+
+@media (min-width: 768px) {
+  .recommendations__icon-home {
+    height: 75px;
+    width: 78px;
+  }
+
+  .recommendations__icon-food {
+    height: 75px;
+    width: 78px;
+  }
+
+  .recommendations__icon-gifts {
+    height: 75px;
+    width: 78px;
+  }
 }

@@ -15,28 +15,145 @@
   position: absolute;
 }
 
+@media (min-width: 768px) {
+  .nav__toggle {
+    display: none;
+  }
+}
+
 .nav__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: $background-navigation-blue;
   padding: 0;
   margin: 0;
 }
 
-.nav__item {
-  padding: 4px 0;
-  list-style-type: none;
+.nav__item:last-child {
+  background-color: white;
+  height: 55px;
+  padding: 0;
+  border-bottom: none;
+}
 
-  @include navigation-border;
+@media (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__item {
+    width: 150px;
+    min-height: 66px;
+    padding: 20px 0;
+    list-style-type: none;
+  }
+
+  .nav__item:nth-of-type(1) {
+    order: 1;
+  }
+
+  .nav__item:nth-of-type(2) {
+    order: 2;
+  }
+
+  .nav__item:nth-of-type(3) {
+    order: 4;
+  }
+
+  .nav__item:nth-of-type(4) {
+    order: 5;
+  }
+
+  .nav__item:nth-of-type(5) {
+    order: 3;
+    padding: 0;
+    height: 55px;
+
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__item {
+    padding: 4px 0;
+    list-style-type: none;
+
+    @include navigation-border;
+  }
 }
 
 .nav__title {
-  font-size: 18px;
-  line-height: 44px;
-  font-weight: $font-bold;
-  color: $color-navigation-title-white;
-  text-transform: uppercase;
+  @include text-naviagaton($color-navigation-title-white,18px,44px);
   text-decoration: none;
+}
+
+.nav__logo {
+  display: block;
+  width: 102px;
+  height: 83px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .nav__item {
+    width: 150px;
+    min-height: 66px;
+    padding: 20px 0;
+    list-style-type: none;
+  }
+
+  .nav__title {
+    @include text-naviagaton($color-navigation-title-desktop,14px,26px);
+    color: $nav-title;
+    text-decoration: none;
+  }
+
+  .nav__logo {
+    width: 102px;
+    height: 83px;
+  }
+
+  .nav__title:hover {
+    color: $nav-title-hover;
+  }
+
+  .nav__title:active {
+    color: $nav-title-down;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav__logo {
+    width: 188px;
+    height: 96px;
+  }
+
+  .nav__item {
+    width: 188px;
+    min-height: 66px;
+    padding: 20px 0;
+    list-style-type: none;
+
+    background-color: transparent;
+  }
+
+  .nav__item:nth-of-type(5) {
+    padding: 0;
+  }
+
+  .nav__title {
+    color: $nav-title;
+  }
+
+  .nav__title:hover {
+    color: $nav-title-hover;
+  }
+
+  .nav__title:active {
+    color: $nav-title-down;
+  }
 }
