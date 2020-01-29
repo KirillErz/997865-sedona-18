@@ -16,14 +16,15 @@
 }
 
 .services__finde {
-
   &--disabled {
     display: block;
     padding: 20px 45px;
     opacity: 0.75;
+
     @include button-text($text-white);
     background-color: $color-button-services-disabled;
   }
+
   background-color: $color-button-services;
 
   @include button-text($text-white);
@@ -42,7 +43,6 @@
 
 
 @media (min-width: 768px) {
-
   .services {
     display: flex;
     align-items: center;
@@ -63,7 +63,6 @@
 }
 
 @media (min-width: 1200px) {
-
   .services {
     display: flex;
     align-items: center;

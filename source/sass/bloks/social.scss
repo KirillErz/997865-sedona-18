@@ -18,23 +18,35 @@
 }
 
 .social__item:active {
-  background-color : $button-social-down;
+  background-color: $button-social-down;
   opacity: 0.8;
 }
 
-.social__item-logo {
-  color : $logo-social;
+.social__item-logo-twitter {
+  width: 17.5px;
+  height: 14.663px;
+  color: $logo-social;
+}
+
+.social__item-logo-facebook {
+  width: 17.5px;
+  height: 14.663px;
+  color: $logo-social;
+}
+
+.social__item-logo-youtube {
+  width: 17.5px;
+  height: 14.663px;
+  color: $logo-social;
 }
 
 @media (min-width: 678px) {
-
   .social__item {
     margin-right: 6px;
   }
 }
 
 @media (min-width: 1200px) {
-
   .social__item {
     margin-right: 6px;
   }

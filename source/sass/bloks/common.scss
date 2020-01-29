@@ -1,25 +1,29 @@
 .common {
   width: 100%;
 }
+
 .common_inner {
   padding: 40px 22px 5px;
   min-width: 320px;
   text-align: center;
 }
-@media (min-width: 768px) {
 
+@media (min-width: 768px) {
   .common {
     min-height: 206px;
   }
+
   .common_inner {
     width: 500px;
     margin: 0 auto;
   }
 }
+
 @media (min-width: 1200px) {
   .common {
     min-height: 206px;
   }
+
   .common_inner {
     width: 500px;
     margin: 0 auto;
